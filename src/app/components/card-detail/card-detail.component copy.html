@@ -1,0 +1,47 @@
+
+    <h2> <a [routerLink]="['/list']">Back to List Page</a> </h2>
+    
+    <div *ngFor="let details of cardDetails">
+        <ng-container *ngIf="filterCard(details)">
+            <div class='container product-details-page'>
+                <div class='row'>
+                    <div class="col-md-4">
+                        <h2>{{details.name}}</h2>
+                        <div class="price">
+                            <p>{{details.currency}} {{details.price}}</p>
+                        </div>
+                        <hr />
+                        <div class="product-info">
+                            <div class='row'>
+                                <div class="col-md-6">
+                                    <p class="title">manufacturer:</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="data">{{details.company}}</p>
+                                </div>
+                            </div>
+
+                            <div class='row'>
+                                <div class="col-md-6">
+                                    <p class="title">Availability:</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="data"><i class="far fa-check-circle"></i>{{details.availability}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+                        <hr />
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src={{details.image}} /></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </ng-container>
+    </div>

@@ -1,0 +1,16 @@
+<body>
+<h2>Card Library</h2>
+<script src="./assets/js/parallax.js"></script>
+<table>
+    <tr>
+        <td (click)="gotoDetail(val)" *ngFor="let val of cards" style="padding: 0 30px">
+            <div class="wrap wrap-2">
+                <div class="container container--1" style="background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url({{val.image}}); background-size: cover;">
+                    
+                </div>
+                <p style="color: black;">{{val.name}}</p>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>

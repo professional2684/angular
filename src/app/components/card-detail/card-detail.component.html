@@ -1,0 +1,44 @@
+<body>
+    <h2 class="product-info"> <a [routerLink]="['/list']">Back to List</a> </h2>
+
+    <div class='container product-details-page'>
+        <div class='row'>
+            <div class="col-md-4">
+                <h2>{{cardDetails.name}}</h2>
+                <div class="price">
+                    <p>{{cardDetails.currency}} {{cardDetails.price}}</p>
+                </div>
+                <hr />
+                <div class="product-info">
+                    <div class='row'>
+                        <div class="col-md-6">
+                            <p class="title">Manufacturer:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="data">{{cardDetails.company}}</p>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class="col-md-6">
+                            <p class="title">Availability:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="data"><i class="far fa-check-circle"></i>{{cardDetails.availability}}</p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <hr />
+
+            </div>
+            <div class="col-md-8">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src={{cardDetails.image}} /></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>

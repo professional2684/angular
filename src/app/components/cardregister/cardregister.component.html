@@ -1,0 +1,14 @@
+<form [formGroup]="registerForm" (ngSubmit) ="registerUser(registerForm.value)">
+    <div>
+        <input type="text" name="exampleInputUsername" placeholder="Username" formControlName="user">
+        <br/>
+        <span *ngIf="user && user.invalid && user.touched" style="color: red">Please enter a valid username</span>    
+    </div>
+    <div >
+        <input type="email" name="exampleInputEmail" placeholder="Enter email" formControlName="email">
+        <br/>
+        <span *ngIf="email && email.invalid && email.touched" style="color: red">Please enter a valid email</span>
+    </div>
+  <br/>
+  <button type="submit" [disabled]="registerForm.invalid" >Submit</button>
+  </form>

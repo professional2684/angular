@@ -1,0 +1,109 @@
+h2{
+  font-weight:bold;
+}
+body {
+  --background-color: hsl(180, 70%, 53%);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  min-height: 100vh;
+  padding: 2rem;
+
+  color: hsla(0, 0%, 0%, .6);
+  background: var(--background-color);
+  text-align: center;
+}
+.product-info{
+  text-align:left;
+}
+.title{
+    font-weight:bold;
+    font-size:16px;
+    margin-right:20px
+  }
+  .data{
+    font-size:16px;
+  }
+  .colors{
+    list-style:none;
+  }
+  .active{
+      border:2px solid black;
+    }
+  li{
+      display:inline-block;
+      width:25px;
+      height:25px;
+      border:2px solid white;
+    }
+    h2{
+      font-weight:bold;
+    }
+    del{
+      font-weight:100;
+      font-size:17px;
+    }
+    .price{
+      margin-top:30px;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+      
+        .red{
+          background-color:red;
+        }
+        .blue{
+          background-color:blue;
+        }
+        .green{
+          background-color:green;
+        }  
+        .yellow{
+          background-color:yellow;
+        }
+        .sizes{
+          list-style:none;
+        }
+          li{
+            font-weight:bold;
+            cursor:pointer;
+            display:inline-block;
+            line-height:25px;
+            width:25px;
+            height:25px;
+            background:BlanchedAlmond;
+            text-align:center;
+            border:2px solid white;
+          }
+          .active{
+              border:2px solid black;
+            }
+          a{
+              color:#333;
+            }
+        .product-details-page{
+          padding:20px;
+      }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+      position:absolute;
+        top:50%;
+      transform:translateY(-50%);
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      font-size:40px;
+      padding-bottom: 5px !important;
+      line-height: 0;
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover{
+      opacity:.5;
+    }
+    
+    .owl-nav button.owl-next{
+      right:10px;
+    }
+    .owl-nav button.owl-prev{
+      left:10px;
+    }

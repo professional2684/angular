@@ -1,0 +1,28 @@
+<body>
+  <script src="./assets/js/index.js"></script>
+  <div class="grid-container">
+    <div class="img-container"></div>
+    <form class="form-container" [formGroup]="loginForm" (ngSubmit)="gotoList(loginForm.value)">
+      <section class="form-description">
+        <h1>Welcome to Card Gallery</h1>
+      </section>
+      <section class="inputs">
+        <div>
+          <input type="text" name="exampleInputUsername" placeholder="Username" formControlName="user">
+          <br />
+          <span *ngIf="user && user.invalid && user.touched" style="color: red">Please enter a valid username</span>
+        </div>
+        <div>
+          <input type="email" name="exampleInputEmail" placeholder="Enter email" formControlName="email">
+          <br />
+          <span *ngIf="email && email.invalid && email.touched" style="color: red">Please enter a valid email</span>
+        </div>
+        <br />
+        <section class="tap">
+          <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+        </section>
+      </section>
+    </form>
+  </div>
+
+</body>
